@@ -1,0 +1,21 @@
+{
+  "name": "video-processor_container",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node processor.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.2",
+    "fluent-ffmpeg": "^2.1.3",
+    "mongoose": "^7.8.7"
+  }
+}
