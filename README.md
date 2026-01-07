@@ -19,11 +19,11 @@
 ## env.example
 
 ```bash
-AWS_REGION=ap-south-1
+AWS_REGION=<region>
 AWS_ACCESS_KEY_ID=xxx
 AWS_SECRET_ACCESS_KEY=xxx
-S3_BUCKET_NAME=doc-agent-files
-SQS_QUEUE_URL=https://sqs.ap-south-1.amazonaws.com/1234567890/video-processing
+S3_BUCKET_NAME=<bucket_name>
+SQS_QUEUE_URL=https://sqs.<region>.amazonaws.com/<>/video-processing
 MONGO_URI=mongodb+srv://...
 BACKEND_URL=http://your-backend-service
 ```
