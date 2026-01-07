@@ -1,0 +1,26 @@
+# Secrets and Credentials
+.env
+.env.*
+*.pem
+*.key
+.aws/
+.ssh/
+
+# Version Control
+.git
+.gitignore
+.gitattributes
+
+# Dependencies (Prevent bloat and architecture mismatches)
+node_modules/
+npm-debug.log*
+
+# OS / IDE specific files
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
+# Docker specific
+Dockerfile
+.dockerignore
