@@ -16,7 +16,7 @@
 
 - for clean up auto-expire raw-videos/ with S3 lifecycle policies (delete after 1 day coz we aint youtube).
 
-
+## env.example
 
 ```bash
 AWS_REGION=ap-south-1
@@ -27,18 +27,6 @@ SQS_QUEUE_URL=https://sqs.ap-south-1.amazonaws.com/1234567890/video-processing
 MONGO_URI=mongodb+srv://...
 BACKEND_URL=http://your-backend-service
 ```
-
-```bash
-docker build -t video-processor:latest .
-
-docker run --env-file .env --network host video-processor:latest
-
-docker tag video-processor:latest heretolearn764/video-processor:latest
-
-docker push heretolearn764/video-processor:latest
-```
-
-
 
 ```bash
  curl -X POST http://localhost:5000/api/videos/upload   -H "Content-Type: multipart/form-data"   -F "title=Test Video"   -F "description=My first upload"   -F "video=@./sample3.mp4"
